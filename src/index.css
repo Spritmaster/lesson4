@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+:root{
+  --black-clr:#0F172A;
+  --clear-btn:#D946EF;
+  --btn-shadow1: 0px 1px 2px 0px #0000000 0px 1px 3px 0px #0000001A;
+  ;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-clr);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  background: #FAE8FF;
+}
+.container{
+  width: 634px;
+  padding: 3.2rem;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px #0000000F;
+  box-shadow: 0px 1px 3px 0px #0000001A;
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.userList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+.birthdayTitle{
+font-size: 3.2rem;
+margin-bottom: 3.2rem;
+}
+.clearBtn{
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--clear-btn);
+  border-radius: 4px;
+  box-shadow: var(--btn-shadow1);
+  color: #fff;
+}
+.clearBtn:hover{
+  opacity: 0.8;
+}
+.clearBtn:active{
+  opacity: 0.6;
+}
+.refresh{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  background: rgb(68, 255, 0);
+  color: #000000;
+  border-radius: 10px;
+}
+

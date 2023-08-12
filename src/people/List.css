@@ -1,0 +1,21 @@
+:root{
+  --age-clr:#64748B;
+}
+
+.userImg{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userName{
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.userAge{
+  color: var(--age-clr);
+}
+.trash-icon{
+  width: 4rem;
+  color: red;
+}
+
