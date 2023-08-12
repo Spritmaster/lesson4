@@ -18,8 +18,8 @@ const App = () => {
    <div className='container'>
     <h1 className='birthdayTitle'>{people ? people.length: 0} Birthdays Today</h1>
     <List people={people} deletePerson={deletePerson}></List>
-     {people.length ? <button onClick={()=>{setPeople(null)}} className='clearBtn'>Clear All</button>:null}
-     {!people.length && <button onClick={()=>{setPeople(users)}} className='refresh'><FiRefreshCw></FiRefreshCw> Refresh</button>}
+    {people.length == 0 && (<button onClick={()=>{setPeople(users)}} className='refresh'><FiRefreshCw></FiRefreshCw> Refresh</button>)}
+     {people.length >0 && (<button onClick={()=>{setPeople([])}} className='clearBtn'>Clear All</button>)}
    </div>
   )
 }
